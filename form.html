@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Driving License Application</title>
+</head>
+<body>
+    <h1>Driving License Application Form</h1>
+
+    <form action="/submit_application" method="POST">
+        <fieldset>
+            <legend>PERSONAL INFORMATION</legend>  
+            <label>First Name:</label>
+            <input id="first_name" name="first_name" required><br><br>
+
+            <label>Last Name:</label>
+            <input type="text" id="last_name" name="last_name"required><br><br>
+
+            <label>Date of Birth:</label>
+            <input type="date" id="dob" name="dob"requied><br><br>
+            <label>Address:</label>
+            <textarea placeholder=" enter adress"></textarea><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>CONTACT INFORMATION</legend>
+
+            <label>Email:</label>
+            <input type="email" id="email" name="email"required><br><br>
+
+            <label>Phone Number:</label>
+            <input type="num" id="phone" name="phone"required><br><br>
+        </fieldset>
+        <fieldset>
+            <legend>LISENCE DETAILS</legend>
+
+            <label>Type of License:</label>
+            <select id="license_type" name="license_type">
+                <option>Learner</option>
+                <option>Permanent</option>
+                <option>Commercial</option>
+            </select><br><br>
+
+            <label>Type of Vehicle:</label>
+            <select id="vehicle_type" name="vehicle_type">
+                <option>Car</option>
+                <option>Motorcycle</option>
+                <option>Truck</option>
+            </select><br><br>
+        </fieldset>
+        <fieldset>
+            <button>Submit Application</button>
+        </fieldset>
+    </form>
+</body>
+</html>
